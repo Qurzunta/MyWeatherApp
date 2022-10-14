@@ -15,10 +15,10 @@ other cities and check the weather, and add that city to your favorite cities li
 
 ## ScreenShots
 
-![Demo] https://ibb.co/85cbvLp
-![Demo] https://ibb.co/RvM7bW0
-![Demo] https://ibb.co/LpJ8bLV
-![Demo] https://ibb.co/C57sx5b
-![Demo] https://ibb.co/bKzP81M
-![Demo] https://ibb.co/djGrZKt
-![Demo] https://ibb.co/vdqp3LP
+![Demo](https://ibb.co/85cbvLp)
+![Demo](https://ibb.co/RvM7bW0)
+![Demo](https://ibb.co/LpJ8bLV)
+![Demo](https://ibb.co/C57sx5b)
+![Demo](https://ibb.co/bKzP81M)
+![Demo](https://ibb.co/djGrZKt)
+![Demo](https://ibb.co/vdqp3LP)
