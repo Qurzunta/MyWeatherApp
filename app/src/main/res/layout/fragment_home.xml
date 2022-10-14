@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.homeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:translationZ="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="-35dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/fh_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Updated at "
+                android:textColor="@color/black"
+                android:textSize="10dp"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:elevation="5dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dark"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/icn_mapmarker"
+                                    android:tint="@color/white"></ImageView>
+
+                                <TextView
+                                    android:id="@+id/fh_tv_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Dubai"
+                                    android:textColor="@color/white"
+                                    android:textSize="24dp"></TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="40dp"
+                                android:gravity="start"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/fh_tv_temp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="--"
+                                        android:textColor="@color/white"
+                                        android:textSize="60dp"></TextView>
+                                    <TextView
+                                        android:id="@+id/fh_tv_main"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Clear"
+                                        android:paddingRight="5dp"
+                                        android:gravity="top"
+                                        android:layout_gravity="center"
+                                        android:textStyle="italic"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp"></TextView>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/fh_tv_scaleType1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="°C"
+                                    android:textColor="@color/white"
+                                    android:textSize="32dp"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/fh_fav"
+                                android:layout_gravity="end"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/icn_fav_empty"
+                                android:tint="@color/white">
+                            </ImageView>
+                            <ImageView
+                                android:id="@+id/fh_img"
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icn_sun"
+                                android:tint="@color/white">
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fh_tv_feelsLike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:text="Feels Like --"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/fh_tv_scaleType2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="°C"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/icn_humidity"
+                                android:tint="@color/white"></ImageView>
+
+                            <TextView
+                                android:id="@+id/fh_tv_humidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/icn_wind"
+                                android:tint="@color/white"></ImageView>
+
+                            <TextView
+                                android:id="@+id/fh_tv_wind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:src="@drawable/icn_dewdrops"
+                                android:tint="@color/white"></ImageView>
+
+                            <TextView
+                                android:id="@+id/fh_tv_dewDrops"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="16dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/daily_list"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>
