@@ -15,7 +15,7 @@ other cities and check the weather, and add that city to your favorite cities li
 
 ## ScreenShots
 
-![Screenshot] (01.jpeg)
+![Screenshot](01.jpeg)
 ![alt text](https://ibb.co/RvM7bW0)
 ![alt text](https://ibb.co/LpJ8bLV)
 ![alt text](https://ibb.co/C57sx5b)
